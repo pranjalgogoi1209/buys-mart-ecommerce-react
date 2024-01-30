@@ -6,11 +6,11 @@ import HomePage from "./pages/HomePage";
 export default function App() {
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        {/* <Route path="/" element={<HomePage />} /> */}
       </Routes>
-      <Header />
-      <HomePage />
     </BrowserRouter>
   );
 }
