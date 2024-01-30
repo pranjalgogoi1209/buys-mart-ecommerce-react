@@ -1,8 +1,24 @@
-# React + Vite
+Price range filters
+Category-based filters
+Sorting options (e.g., Popularity, Price, New arrivals)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+pages =>
 
-Currently, two official plugins are available:
+    i. home
+    ii. about
+    iii. products
+    iv. productDetails
+    v. cart
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+components =>
+
+    i. home =>
+        a.
+    ii. about =>
+        a.
+    iii. products =>
+        a.
+    iv. productDetails =>
+        a.
+    v. cart =>
+        a.
