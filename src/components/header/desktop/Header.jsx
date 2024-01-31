@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./../../../styles/components/header/desktop/header.module.css";
 import { Link } from "react-router-dom";
 import { CiUser } from "react-icons/ci";
 import { FaBarsStaggered } from "react-icons/fa6";
+import Sidebar from "./../mobile/Sidebar";
 
 export default function Header() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   return (
     <header className={styles.header}>
       {/* logo */}
@@ -31,12 +33,23 @@ export default function Header() {
         </div>
       </Link>
 
-      {/* slidebar opener*/}
-      <div className={styles.sidebarOpener}>
+      {/* sidebar opener*/}
+      <div
+        className={styles.sidebarOpener}
+        onClick={() => {
+          setIsSidebarOpen(true);
+          console.log("sidebar opened");
+        }}
+      >
         <FaBarsStaggered />
       </div>
 
-      <slidebar />
+      {isSidebarOpen && (
+        <Sidebar
+          setIsSidebarOpen={setIsSidebarOpen}
+          isSidebarOpen={isSidebarOpen}
+        />
+      )}
     </header>
   );
 }

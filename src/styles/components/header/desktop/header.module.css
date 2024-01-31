@@ -46,6 +46,7 @@
 .sidebarOpener {
   border: 1px solid black;
   font-size: 2.5vw;
+  cursor: pointer;
   display: none;
 }
 
@@ -63,7 +64,7 @@
   .userProfile {
     display: none;
   }
-  .slidebar {
+  .sidebarOpener {
     display: flex;
     font-size: 10vw;
   }
