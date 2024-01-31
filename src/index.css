@@ -1,7 +1,12 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  width: 100vw;
+  border: 1px solid purple;
+  padding: 0 2vw 2vw 2vw;
 }
