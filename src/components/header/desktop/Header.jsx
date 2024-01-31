@@ -32,7 +32,7 @@ export default function Header() {
       </Link>
 
       {/* slidebar opener*/}
-      <div className={styles.slidebar}>
+      <div className={styles.sidebarOpener}>
         <FaBarsStaggered />
       </div>
 
