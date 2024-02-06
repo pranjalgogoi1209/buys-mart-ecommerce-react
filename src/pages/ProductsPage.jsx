@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import styles from "../styles/pages/productsPage.module.css";
+import { useNavigate } from "react-router-dom";
 
 const renderStars = (rating) => {
   const fullStars = Math.floor(rating);
@@ -32,8 +33,14 @@ const renderStars = (rating) => {
 };
 
 const Card = ({ item }) => {
+  const navigate = useNavigate();
+  const handleClick = (item) => {
+    navigate("/product", { state: item });
+  };
   return (
-    <div className={styles.prodCard}>
+    <div
+      className={styles.prodCard}
+      onClick={() => handleClick(item)}>
       <h2>{item.title}</h2>
       <div
         className={styles.prodThumbNail}
@@ -43,12 +50,11 @@ const Card = ({ item }) => {
         <h5>{renderStars(item.rating)}</h5>
       </div>
       <p>{item.description}</p>
-      {/* <div>{item.category}</div> */}
       <div className={styles.flexboc}>
         {item.stock < 10 ? (
-          <h style={{ color: "#f62b2b" }}>
+          <h5 style={{ color: "#f62b2b" }}>
             hurry up !!! only {item.stock} left...
-          </h>
+          </h5>
         ) : (
           <h5>Stock : {item.stock}</h5>
         )}
@@ -68,8 +74,13 @@ const ProductsPage = () => {
 
   return (
     <div className={styles.prodCardBox}>
-      {prod.map((item) => {
-        return <Card item={item} />;
+      {prod.map((item, key) => {
+        return (
+          <Card
+            item={item}
+            key={key}
+          />
+        );
       })}
     </div>
   );

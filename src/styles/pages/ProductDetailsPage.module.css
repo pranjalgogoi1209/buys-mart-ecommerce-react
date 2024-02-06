@@ -1,0 +1,194 @@
+/** @format */
+
+.page {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 3%;
+  gap: 3%;
+}
+.leftPart {
+  width: 45%;
+  background-color: blueviolet;
+  border-radius: 2rem 0 2rem 0;
+  height: 75vh;
+  padding: 3rem;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.leftPart h1 {
+  color: orange;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rightmain {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  align-items: flex-end;
+}
+.stars {
+  font-size: 1.2rem;
+  color: orange;
+}
+.category {
+  font-size: 0.8rem;
+  color: aliceblue;
+}
+.thumbnail {
+  height: 15rem;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  border-radius: 2rem 0 0 0;
+}
+.description {
+  color: orange;
+  display: flex;
+  flex-direction: column;
+}
+.images {
+  display: flex;
+  overflow-x: scroll;
+  gap: 1rem;
+  height: 10rem;
+}
+.images {
+  overflow: scroll; /* or overflow-y: scroll; if you only want vertical scrolling */
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* For WebKit browsers like Chrome and Safari */
+.images::-webkit-scrollbar {
+  width: 12px; /* Adjust the width as needed */
+}
+
+.images::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.images:hover::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* Change the color on hover as needed */
+}
+.images img {
+  width: 12rem;
+}
+.discount {
+  position: absolute;
+  background-color: orange;
+  color: blueviolet;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 50%;
+  min-width: 6rem;
+  min-height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -2rem 0 0 -2rem;
+}
+.actions {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.actions button {
+  border: 0;
+  background-color: orange;
+  padding: 0.4rem 0.8rem;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: blueviolet;
+  cursor: pointer;
+}
+.actions button span {
+  text-decoration: line-through 2px;
+  color: black;
+  font-weight: normal;
+}
+
+.rightPath {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.all {
+  width: 100%;
+  height: 15rem;
+  overflow-x: scroll;
+  border-top: 1px solid blueviolet;
+  border-bottom: 1px solid blueviolet;
+  gap: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.card {
+  min-width: 15rem;
+  height: 13rem;
+  border: 2px solid blueviolet;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+.card_title {
+  color: blueviolet;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 2rem;
+  overflow-y: hidden;
+}
+.card_img {
+  max-height: 6rem;
+  max-width: 85%;
+}
+.actionButton {
+  background-color: blueviolet;
+  color: aliceblue;
+  border-radius: 3rem;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+}
+
+.actionside {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.actionside button {
+  border: 0;
+  background-color: orange;
+  padding: 0.4rem 0.8rem;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: blueviolet;
+  cursor: pointer;
+  border: 2px solid blueviolet;
+}
+.points {
+  padding: 2rem 5rem;
+}
+
+.points ul li {
+  color: blueviolet;
+  margin: 0.6rem;
+  font-weight: 500;
+}

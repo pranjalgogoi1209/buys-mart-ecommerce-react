@@ -1,0 +1,54 @@
+/** @format */
+
+.cartArea {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 3rem 0;
+  align-items: center;
+}
+.order {
+  height: 5rem;
+  width: 90%;
+  border: 2px solid orange;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 0 4rem;
+  justify-content: space-between;
+}
+.order div {
+  width: 16%;
+  height: 80%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blueviolet;
+  font-size: 1.2rem;
+}
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  width: 100%;
+  padding: 0 5rem;
+}
+.actions button {
+  background-color: orange;
+  padding: 0.6rem 1rem;
+  border: 2px solid blueviolet;
+  color: blueviolet;
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.quantity {
+  display: flex;
+  justify-content: space-between !important;
+  padding: 0 1rem;
+}
+.signs {
+  font-size: 2rem;
+  cursor: pointer;
+}

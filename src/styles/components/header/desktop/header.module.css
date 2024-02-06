@@ -1,25 +1,25 @@
+/** @format */
+
 .header {
-  border: 1px solid red;
+  background-color: blueviolet;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5vw 0;
+  padding: 1.5vw 3rem;
 }
 .logo {
-  border: 1px solid black;
   font-size: 2vw;
   font-weight: bold;
 }
 .navlinks {
-  border: 1px solid black;
   display: flex;
   align-items: center;
   gap: 4vw;
-  font-size: 2vw;
+  font-size: 1.6rem;
 }
 .navlinks a {
   text-decoration-line: none;
-  color: #666;
+  color: orange;
   font-weight: 500;
   position: relative;
 }

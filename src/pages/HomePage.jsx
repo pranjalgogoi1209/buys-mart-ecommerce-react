@@ -1,9 +1,11 @@
 
 import React from "react";
 import styles from "../styles/pages/Home.module.css";
+import ProductsPage from "./ProductsPage"
 
 export default function HomePage() {
   return (
+    <>
     <div className={styles.home}>
         <div className={styles.homeLeft}>
             <h2>Shop</h2>
@@ -14,5 +16,7 @@ export default function HomePage() {
         </div>
         <div className={styles.animation}></div>
     </div>
+    <ProductsPage/>
+    </>
     );
 }
