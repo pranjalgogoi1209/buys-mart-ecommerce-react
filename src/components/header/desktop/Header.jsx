@@ -17,10 +17,10 @@ export default function Header() {
 
       {/* navlinks */}
       <nav className={styles.navlinks}>
-        <Link href={"/"}>Home</Link>
-        <Link href={"/about"}>About</Link>
-        <Link href={"/products"}>Products</Link>
-        <Link href={"/products/:id"}>Cart</Link>
+        <Link to={"/"}>Home</Link>
+        <Link to={"/about"}>About</Link>
+        <Link to={"/products"}>Products</Link>
+        <Link to={"/cart"}>Cart</Link>
         {/* condition will apply bw login and logout */}
         <Link href={"/login"}>Login</Link>
         {/* <Link href={"/logout"}>Logout</Link> */}

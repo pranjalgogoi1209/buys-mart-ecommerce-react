@@ -1,4 +1,84 @@
-.home {
-  color: red;
-  background-color: orange;
+@keyframes changeBackground {
+  0%, 100% {
+    background-image: url(/images/1.png);
+  }
+  20% {
+    background-image: url(/images/2.png);
+  }
+  40% {
+    background-image: url(/images/4.png);
+  }
+  50% {
+    background-image: url(/images/5.png);
+  }
+  70% {
+    background-image: url(/images/6.png);
+  }
+  90% {
+    background-image: url(/images/7.png);
+  }
 }
+
+@keyframes imageChange {
+  0%, 100% {
+    opacity: 0;
+  }
+  20%, 40%, 50%, 70%, 90% {
+    opacity: 1;
+  }
+}
+
+.home {
+  background-color: #3a3a3a;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.animation {
+  width: 50%;
+  height: 90%;
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  animation: changeBackground 5.5s infinite, imageChange 5.5s infinite;
+}
+
+.homeLeft {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: white;
+  padding: 3rem;
+}
+
+.typist {
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  color: rgb(255, 191, 0);
+  animation: typing 5.5s steps(40, end) infinite, blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+    margin-right: 100%;
+  }
+  to {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+
